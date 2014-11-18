@@ -1,0 +1,33 @@
+<h1>Listing exames_pacientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Medico</th>
+      <th>Paciente</th>
+      <th>Exame</th>
+      <th>Quantidade</th>
+      <th>Valor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exames_pacientes.each do |exames_paciente| %>
+      <tr>
+        <td><%= exames_paciente.medico %></td>
+        <td><%= exames_paciente.paciente %></td>
+        <td><%= exames_paciente.exame %></td>
+        <td><%= exames_paciente.quantidade %></td>
+        <td><%= exames_paciente.valor %></td>
+        <td><%= link_to 'Show', exames_paciente %></td>
+        <td><%= link_to 'Edit', edit_exames_paciente_path(exames_paciente) %></td>
+        <td><%= link_to 'Destroy', exames_paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exames paciente', new_exames_paciente_path %>

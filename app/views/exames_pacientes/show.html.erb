@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Medico:</strong>
+  <%= @exames_paciente.medico %>
+</p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @exames_paciente.paciente %>
+</p>
+
+<p>
+  <strong>Exame:</strong>
+  <%= @exames_paciente.exame %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @exames_paciente.quantidade %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @exames_paciente.valor %>
+</p>
+
+<%= link_to 'Edit', edit_exames_paciente_path(@exames_paciente) %> |
+<%= link_to 'Back', exames_pacientes_path %>

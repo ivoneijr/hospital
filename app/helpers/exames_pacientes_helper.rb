@@ -1,0 +1,2 @@
+module ExamesPacientesHelper
+end
